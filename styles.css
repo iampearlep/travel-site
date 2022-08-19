@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(241, 241, 241);
+    color: rgb(31, 31, 157);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(31, 31, 157);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0.5rem 2.5rem;
+    position: relative;
+}
+nav {
+    display: flex;
+    margin-top: 0.75rem;
+    width: 100%;
+    justify-content: space-around;
+    color: rgb(31, 31, 157);
+}
+nav ul{
+    display: flex;
+}
+nav ul li {
+    margin-left: 2rem;
+}
+nav ul li a{
+    font-size: 0.875rem;
+}
+nav ul li a:hover {
+    color: rgb(199, 199, 22);
+}
+.logo a{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.nav-btn li a {
+    padding: 0.625rem 1rem;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+.signup-btn {
+    background-color: white;
+    color: rgb(31, 31, 157);
+    border: 1px solid rgb(31, 31, 157);
+}
+.register-btn {
+    background-color: rgb(31, 31, 157);
+    color: #fff;
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-item{
+ padding: 5rem 0;
+ margin-left: 4.5rem;
+}
+h1 {
+    width: 100%;
+    font-size: 2.75rem;
+}
+.left-item p {
+    width: 75%;
+    margin-top: 1.5rem;
+}
+.hero-img img {
+    width: 90%;
+    margin-top: -100px;
+    margin-left: 60px;
+}
+ 
+#search {
+    width: 60%;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    position: absolute;
+}
+.search-btn {
+    margin-left: 670px;
+    margin-top: 37px;
+    position: absolute;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(31, 31, 157);
+    border: none;
+}
+::placeholder {
+    color: rgb(31, 31, 157);
+}
+
+/* Middle Section */
+.middle-section{
+    margin: 60px 50px;
+}
+h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: -30px 0 5px 10px;
+    color: #fff;
+}
+.img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+.popular-img img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    max-height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(190, 190, 190);
+}
+.offer-header{
+    margin-top: 60px;
+}
+.offer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px 70px;
+    text-align: center;
+    gap: 40px;
+}
+.offer {
+    background-color: #fff;
+    box-shadow: 0 7px 7px rgb(190, 190, 190);
+    padding: 50px 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+.offer p {
+   margin: auto;
+    width: 70%;
+}
+h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* Gallery Section */
+.gallery-section {
+    margin-top: 80px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+.gallery-img img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    max-height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgb(190, 190, 190);
+}
+/* CTA Section */
+.cta-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#cta-header {
+    color: rgb(31, 31, 157);
+    font-size: 1.5rem;
+}
+.cta {
+   width: 40%;
+   padding: 20px;
+   text-align: center;
+   background-color: #fff;
+   max-height: 150px;
+   border-radius: 10px;
+   margin-bottom: -50px;
+   z-index: 1;
+}
+.get-started-btn {
+    background-color: rgb(31, 31, 157);
+    color: #fff;
+    padding: 10px 30px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Footer */
+footer {
+    background-color: rgb(31, 31, 157);
+    color: #fff;
+    height: 100px;
+    position: relative;
+    z-index: -1;
+    text-align: center;
+}
+.copyright {
+    padding-top: 80px;
+    font-size: 0.75rem;
+}
+
+
+
+
+/* Mobile Devices */
+
+@media screen and (max-width: 750px){
+    
+   .top-container {
+    background-image: url(/images/paris.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+   }
+    nav {
+        display: none;
+    }
+    .hero-container {
+        display: flex;
+        justify-content: center;
+    }
+    .logo a{
+        font-size: 2rem;
+        margin-left: -35px;
+        color: #fff;
+    }
+    .left-item {
+        text-align: center;
+        width: 70%;
+       
+        margin-left: 0;
+    }
+    .left-item p {
+        text-align: center;
+        margin-left: 30px;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .hero-img {
+        display: none;
+    }
+    #search{
+        position: relative;
+        width: 80%;
+    }
+    .search-btn {
+       display: none;
+    }
+    ::placeholder {
+        color: #000;
+    }
+
+    .middle-section{
+        margin: 40px 20px;
+    }
+     h2{
+        font-size: 2rem;
+       width: 50%;
+       text-align: center;
+       margin: 0 auto;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        padding-left: 0;
+        margin-left: 35px;
+    }
+    .popular-img {
+        margin-top: 30px;
+    }
+    .popular-img img {
+        width: 90%;
+    }
+    .offer-container {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 60px;
+        justify-content: center;
+        text-align: center;
+    }
+    .offer-header {
+        width: 100%;
+        text-align: center;
+    }
+    .offer {
+        width: 100%;
+        padding: 50px;
+       
+    }
+    .offer p {
+        width: 85%;
+    }
+    .gallery-section {
+        margin-top: 60px;
+    }
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+       margin-left: 70px;
+        justify-content: center;
+    }
+    .gallery-img img {
+        width: 80%;
+        max-height: 400px;
+    }
+    .cta {
+        width: 90%;
+        padding: 10px;
+        height: 100px;
+    }
+    #cta-header {
+        font-size: 1rem;
+        width: 70%;
+    }
+    .get-started-btn {
+        padding: 7px 20px;
+    }
+}
+
+/* Tablet Devices */
+@media  screen and (min-width: 768px) and (max-width: 979px) {
+    .hero-img img {
+        display: none;
+    }
+    .top-container {
+        background-image: url(/images/dubai.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+    .hero-container {
+        display: flex;
+        justify-content: center;
+    }
+    .left-item {
+        width: 60%;
+       text-align: center;
+       margin-left: 0;
+    }
+    .left-item p{
+        text-align: center;
+        margin-left: 3rem;
+    }
+    #search{
+        position: relative;
+    }
+    .search-btn {
+        padding: 15px;
+        position: relative;
+        margin-left: -80px;
+    }
+    .logo a {
+        color: #fff;
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    nav ul li{
+        margin-left: 1rem;
+    }
+    nav ul li a {
+        color: #fff;
+        padding: 0;
+    }
+    .middle-section {
+        margin: 50px 0 10px;
+    }
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+        padding-left: 80px;
+    }
+    .popular-img {
+        margin: auto;
+    }
+    .popular-img img {
+        margin-top: 50px;
+        width: 80%;
+       max-height: 400px;
+    }
+    .offer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .offer {
+       width: 50%;
+      margin: auto;
+      padding: 60px 30px;
+    }
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+       margin-left: 0;
+    }
+    .gallery-img  {
+        margin: auto;
+    }
+    .gallery-img img {
+        margin-top: 50px;
+        width: 100%;
+       max-height: 400px;
+    }
+    .cta {
+        width: 80%;
+        padding: 15px;
+        height: 120px;
+        text-align: center;
+    }
+    #cta-header {
+        width: 70%;
+        font-size: 1.2rem;
+        margin: auto;
+    }
+    .get-started-btn {
+        padding: 7px 20px;
+    }
+}
