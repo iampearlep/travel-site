@@ -342,15 +342,14 @@ footer {
     .gallery-container {
         display: flex;
         justify-content: center;
-       max-width: 100%;
        position: relative;
-       margin-left: 0;
+       margin-left: 20px;
     }
     .gallery-img {
         display: none;
     }
     .gallery-img img {
-        width: 100%;
+        width: 95%;
         max-height: 400px;
     }
     .fade {
