@@ -11,7 +11,6 @@ function showSlides() {
         slideIndex = 1
     }
     if (w <= 750) {
-    // Probably mobile
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
@@ -20,7 +19,6 @@ function showSlides() {
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "block";
         }
-    // Probably desktop
     }
 
     setTimeout(showSlides, 2000);
