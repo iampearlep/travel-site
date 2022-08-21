@@ -350,7 +350,7 @@ footer {
         display: none;
     }
     .gallery-img img {
-        width: 100%;
+        width: 95%;
         max-height: 400px;
     }
     .fade {
